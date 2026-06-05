@@ -1,16 +1,16 @@
 :root {
-  --bg:      #0d0000;
-  --surface: #1a0a0a;
-  --surface2:#2a0505;
-  --border:  #441111;
-  --border2: #220808;
-  --accent:  #ff4500;
-  --accent2: #ff8c00;
-  --muted:   #cca3a3;
-  --dimmed:  #666;
-  --yes:     #00cc44;
-  --no:      #cc3300;
-  --text:    #e0e0e0;
+  --bg:      #000a02;
+  --surface: #0a140c;
+  --surface2:#0f2414;
+  --border:  #164420;
+  --border2: #0b2210;
+  --accent:  #00ff66;
+  --accent2: #33cc66;
+  --muted:   #a3cca9;
+  --dimmed:  #55735c;
+  --yes:     #00ff66;
+  --no:      #cc3333;
+  --text:    #e0ebe0;
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -34,7 +34,7 @@ body {
   background: var(--surface);
   padding: 15px;
   border-radius: 12px;
-  box-shadow: 0 10px 40px rgba(255, 69, 0, 0.2);
+  box-shadow: 0 10px 40px rgba(0, 255, 102, 0.15);
   width: 95%;
   max-width: 1400px;
   border: 1px solid var(--border);
@@ -131,7 +131,7 @@ thead th.sort-active {
 .secondary-sort-btn.active {
   background: var(--accent);
   border-color: var(--accent);
-  color: #fff;
+  color: #000a02;
 }
 
 .filter-btn {
@@ -151,8 +151,9 @@ thead th.sort-active {
 .filter-btn.active {
   background: var(--accent);
   border-color: var(--accent);
-  color: #fff;
+  color: #000a02;
 }
+
 .table-scroll {
   overflow-x: auto;
   padding-top: 12px;
@@ -164,7 +165,7 @@ table {
   border-collapse: collapse;
   margin-top: 10px;
   font-size: 0.82em;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.5);
   min-width: 900px;
 }
 
@@ -193,7 +194,7 @@ tbody tr {
 }
 
 tbody tr:hover {
-  background: rgba(255, 69, 0, 0.08);
+  background: rgba(0, 255, 102, 0.05);
 }
 
 tbody td {
@@ -232,21 +233,21 @@ a.profile-link:hover {
 }
 
 .badge-yes {
-  background: rgba(0, 204, 68, 0.15);
+  background: rgba(0, 255, 102, 0.1);
   color: var(--yes);
-  border: 1px solid rgba(0, 204, 68, 0.3);
+  border: 1px solid rgba(0, 255, 102, 0.25);
 }
 
 .badge-no {
-  background: rgba(51, 10, 10, 0.6);
-  color: var(--muted);
-  border: 1px solid var(--border2);
+  background: rgba(34, 11, 11, 0.6);
+  color: #ff6666;
+  border: 1px solid #551111;
 }
 
 .badge-pending {
-  background: rgba(255, 140, 0, 0.12);
+  background: rgba(51, 153, 102, 0.15);
   color: var(--accent2);
-  border: 1px solid rgba(255, 140, 0, 0.3);
+  border: 1px solid rgba(51, 153, 102, 0.3);
 }
 
 .star {
@@ -266,7 +267,7 @@ a.profile-link:hover {
 
 .error-row td {
   padding: 24px;
-  color: var(--accent);
+  color: var(--no);
   font-family: monospace;
   text-align: center;
 }
