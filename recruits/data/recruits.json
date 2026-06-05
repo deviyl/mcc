@@ -12,6 +12,7 @@
     "donatorStatus": "subscriber",
     "lastAction": "Now",
     "sentAt": "2026-06-05T22:10:35.657Z",
-    "joined": null
+    "joined": true,
+    "resolvedAt": "2026-06-05T22:11:30.886Z"
   }
 ]
